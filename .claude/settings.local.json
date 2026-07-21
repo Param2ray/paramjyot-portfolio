@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx vite *)",
+      "Bash(wsl.exe -e bash -lc \"cd /home/param/paramjyot-portfolio && npx vite build 2>&1 | tail -40\")"
+    ]
+  }
+}

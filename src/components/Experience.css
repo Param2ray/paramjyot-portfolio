@@ -1,0 +1,124 @@
+.experience {
+  padding: 100px 24px;
+  background: #0f172a;
+  border-top: 1px solid rgba(56, 189, 248, 0.1);
+}
+
+.experience-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.experience h2 {
+  margin: 0 0 48px;
+  text-align: center;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.experience h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 16px auto 0;
+  background: #38bdf8;
+  border-radius: 2px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 32px;
+  border-left: 2px solid rgba(56, 189, 248, 0.25);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 6px;
+  left: -39px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #08111f;
+  border: 2px solid #38bdf8;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.12);
+}
+
+.timeline-card {
+  background: rgba(56, 189, 248, 0.05);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  border-radius: 12px;
+  padding: 24px;
+  transition: border-color 0.2s ease;
+}
+
+.timeline-card:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.timeline-card h3 {
+  margin: 0 0 4px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.timeline-org {
+  margin: 0 0 14px;
+  color: #38bdf8;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.timeline-description {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.98rem;
+  line-height: 1.75;
+}
+
+.timeline-tech {
+  list-style: none;
+  margin: 18px 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.timeline-tech li {
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  background: rgba(203, 213, 225, 0.08);
+  border: 1px solid rgba(203, 213, 225, 0.12);
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+@media (max-width: 600px) {
+  .experience {
+    padding: 72px 20px;
+  }
+
+  .timeline {
+    padding-left: 24px;
+  }
+
+  .timeline-marker {
+    left: -31px;
+  }
+
+  .timeline-card {
+    padding: 18px;
+  }
+}
