@@ -1,16 +1,74 @@
-# React + Vite
+# Paramjyot Tooray Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React portfolio showcasing my DevOps and Cloud Engineering projects.
 
-Currently, two official plugins are available:
+## Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Coming soon: https://paramjyot2ray.com
 
-## React Compiler
+## About
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio highlights my hands-on experience building production-style cloud platforms using:
 
-## Expanding the ESLint configuration
+- AWS
+- Terraform
+- Docker
+- Kubernetes
+- Amazon ECS
+- Amazon EKS
+- GitHub Actions
+- ArgoCD
+- Linux
+- Bash
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Featured Projects
+
+### EKS Production Platform
+
+Production-style Kubernetes platform running on Amazon EKS featuring:
+
+- Infrastructure as Code with Terraform
+- GitHub Actions CI/CD
+- GitOps with ArgoCD
+- Helm deployments
+- Traefik Ingress
+- cert-manager
+- ExternalDNS
+- Redis backend
+- TLS
+
+Repository:
+https://github.com/Param2ray/eks-production-platform
+
+### ECS Production Healthcheck Service
+
+Production-ready monitoring platform running on Amazon ECS Fargate featuring:
+
+- ECS Fargate
+- Terraform
+- GitHub Actions
+- Application Load Balancer
+- HTTPS
+- CloudWatch logging
+- Private networking
+- IAM least privilege
+
+Repository:
+https://github.com/Param2ray/ecs-production-healthcheck-service
+
+## Technology Stack
+
+- React
+- Vite
+- JavaScript
+- CSS
+- GitHub Pages / AWS S3 (planned)
+- Amazon CloudFront (planned)
+
+## Contact
+
+LinkedIn:
+https://www.linkedin.com/in/paramjyot-tooray-43a5442b/
+
+GitHub:
+https://github.com/Param2ray
