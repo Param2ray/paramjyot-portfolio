@@ -64,6 +64,7 @@
   color: #ffffff;
   font-size: 1.4rem;
   font-weight: 700;
+  line-height: 1.25;
   text-align: center;
 }
 
@@ -75,27 +76,32 @@
   text-align: center;
 }
 
-/* Project feature checklist */
+/* Independent feature columns */
+.project-feature-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  column-gap: 18px;
+  margin: 0 0 32px;
+}
+
 .project-features {
   list-style: none;
-  margin: 0 0 32px;
+  margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 22px;
-  row-gap: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .project-features li {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
-  gap: 7px;
+  gap: 6px;
   min-width: 0;
   margin: 0;
   color: #e2e8f0;
-  font-size: 0.92rem;
-  line-height: 1.4;
+  font-size: 0.88rem;
+  line-height: 1.35;
   text-align: left;
 }
 
@@ -103,13 +109,12 @@
   display: block;
   min-width: 0;
   flex: 1;
-  text-align: left;
 }
 
 .feature-check {
-  width: 17px;
-  height: 17px;
-  min-width: 17px;
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
   flex-shrink: 0;
   margin-top: 1px;
   color: #38bdf8;
@@ -157,8 +162,8 @@
 .project-links a {
   display: inline-block;
   padding: 10px 18px;
-  border-radius: 8px;
   border: 1px solid #38bdf8;
+  border-radius: 8px;
   color: #38bdf8;
   font-size: 0.9rem;
   font-weight: 700;
@@ -201,8 +206,13 @@
     padding: 26px;
   }
 
-  .project-features {
+  .project-feature-columns {
     grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .project-features {
+    gap: 10px;
   }
 
   .project-links a {

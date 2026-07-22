@@ -1,0 +1,81 @@
+.contact {
+  padding: 100px 24px;
+  background: #08111f;
+  border-top: 1px solid rgba(56, 189, 248, 0.1);
+}
+
+.contact-content {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 24px;
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+}
+
+.contact h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 16px auto 0;
+  background: #38bdf8;
+  border-radius: 2px;
+}
+
+.contact-text {
+  color: #cbd5e1;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 40px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.contact-button {
+  padding: 12px 22px;
+  border: 1px solid #38bdf8;
+  border-radius: 8px;
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all .25s ease;
+}
+
+.contact-button:hover {
+  background: rgba(56,189,248,.1);
+  transform: translateY(-2px);
+}
+
+.contact-button.primary {
+  background: #38bdf8;
+  color: #08111f;
+}
+
+.contact-button.primary:hover {
+  background: #5acbff;
+}
+
+@media (max-width:600px){
+
+  .contact{
+    padding:72px 20px;
+  }
+
+  .contact-buttons{
+    flex-direction:column;
+  }
+
+  .contact-button{
+    width:100%;
+  }
+
+}
