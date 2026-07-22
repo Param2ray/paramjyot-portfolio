@@ -13,9 +13,13 @@ function Hero() {
       <div className="hero-bg" aria-hidden="true" />
 
       <div className="hero-content">
-        <p className="eyebrow">AWS • Terraform • Docker • Kubernetes</p>
+        <p className="eyebrow">
+          AWS • Terraform • Docker • Kubernetes
+        </p>
 
-        <span className="badge">Building production-style AWS cloud platforms</span>
+        <span className="badge">
+          Building production-style AWS cloud platforms
+        </span>
 
         <h1>Paramjyot Tooray</h1>
 
@@ -50,7 +54,12 @@ function Hero() {
             LinkedIn
           </a>
 
-          <a className="secondary-button" href="#">
+          <a
+            className="secondary-button"
+            href="/Paramjyot_Tooray_DevOps_Engineer_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Download Resume
           </a>
         </div>

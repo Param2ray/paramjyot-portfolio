@@ -13,19 +13,19 @@ const PROJECTS = [
       'Production Kubernetes architecture',
       'ExternalDNS automation',
       'Helm deployments',
-      'Redis backend',
+      'Kubernetes',
     ],
     highlights: [
-      'Terraform Infrastructure as Code',
-      'GitHub Actions CI/CD',
-      'ArgoCD GitOps',
+      'Kubernetes',
+      'Amazon EKS',
+      'Terraform',
+      'GitHub Actions',
+      'ArgoCD',
       'Helm',
       'Traefik',
       'cert-manager',
       'ExternalDNS',
-      'Redis backend',
       'TLS',
-      'Amazon EKS',
     ],
     links: [
       {
@@ -57,6 +57,7 @@ const PROJECTS = [
       'IAM least privilege',
     ],
     highlights: [
+      'Amazon ECS',
       'ECS Fargate',
       'Terraform',
       'GitHub Actions',
@@ -92,7 +93,7 @@ function Projects() {
 
         <div className="projects-grid">
           {PROJECTS.map((project) => (
-            <div key={project.title} className="project-card">
+            <article key={project.title} className="project-card">
               <h3>{project.title}</h3>
 
               <p className="project-description">{project.description}</p>
@@ -148,7 +149,7 @@ function Projects() {
                   )
                 })}
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>
