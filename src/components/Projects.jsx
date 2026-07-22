@@ -34,10 +34,10 @@ const PROJECTS = [
       },
       {
         label: 'Architecture Diagram',
-        href: '#',
+        href: '/images/eks-architecture.png',
       },
       {
-        label: 'Loom Walkthrough',
+        label: 'Video Walkthrough',
         href: '#',
       },
     ],
@@ -74,10 +74,10 @@ const PROJECTS = [
       },
       {
         label: 'Architecture Diagram',
-        href: '#',
+        href: '/images/ecs-architecture.png',
       },
       {
-        label: 'Loom Walkthrough',
+        label: 'Video Walkthrough',
         href: '#',
       },
     ],
@@ -127,16 +127,26 @@ function Projects() {
               </ul>
 
               <div className="project-links">
-                {project.links.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    target={link.href === '#' ? undefined : '_blank'}
-                    rel={link.href === '#' ? undefined : 'noopener noreferrer'}
-                  >
-                    {link.label}
-                  </a>
-                ))}
+                {project.links.map((link) => {
+                  const isPlaceholder = link.href === '#'
+
+                  return (
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      target={isPlaceholder ? undefined : '_blank'}
+                      rel={isPlaceholder ? undefined : 'noopener noreferrer'}
+                      aria-disabled={isPlaceholder}
+                      onClick={
+                        isPlaceholder
+                          ? (event) => event.preventDefault()
+                          : undefined
+                      }
+                    >
+                      {link.label}
+                    </a>
+                  )
+                })}
               </div>
             </div>
           ))}
