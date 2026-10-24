@@ -79,7 +79,7 @@ const PROJECTS = [
       },
       {
         label: 'Video Walkthrough',
-        href: '#',
+        href: 'https://www.loom.com/share/74f0653af3ce4eb9a1fb4d8671542cd4',
       },
     ],
   },

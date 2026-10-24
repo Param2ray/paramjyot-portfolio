@@ -6,6 +6,7 @@ import About from './components/About.jsx'
 import Skills from './components/Skills.jsx'
 import Experience from './components/Experience.jsx'
 import Projects from './components/Projects.jsx'
+import Articles from './components/Articles.jsx'
 import Contact from './components/Contact.jsx'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Skills />
       <Experience />
       <Projects />
+      <Articles />
       <Contact />
     </>
   )
