@@ -1,29 +1,79 @@
+
 import './Skills.css'
 
 const SKILL_GROUPS = [
   {
     title: 'Cloud',
-    skills: ['AWS', 'ECS', 'EKS', 'Fargate', 'CloudWatch', 'IAM', 'VPC'],
+    skills: [
+      'AWS',
+      'EC2',
+      'ECS',
+      'EKS',
+      'Fargate',
+      'ECR',
+      'S3',
+      'SQS',
+      'IAM',
+      'VPC',
+      'Route 53',
+      'CloudWatch',
+      'Secrets Manager',
+      'KMS',
+    ],
   },
   {
     title: 'Infrastructure as Code',
-    skills: ['Terraform'],
+    skills: [
+      'Terraform',
+      'Terraform Modules',
+      'Remote State',
+      'S3 State Locking',
+    ],
   },
   {
     title: 'Containers and Orchestration',
-    skills: ['Docker', 'Docker Compose', 'Kubernetes', 'Helm'],
+    skills: [
+      'Docker',
+      'Docker Compose',
+      'Kubernetes',
+      'Helm',
+      'Traefik',
+      'cert-manager',
+      'ExternalDNS',
+    ],
   },
   {
     title: 'CI/CD and GitOps',
-    skills: ['GitHub Actions', 'ArgoCD', 'OIDC', 'GitOps'],
+    skills: [
+      'GitHub Actions',
+      'ArgoCD',
+      'OIDC',
+      'GitOps',
+    ],
   },
   {
     title: 'Systems and Scripting',
-    skills: ['Linux', 'Bash', 'Git'],
+    skills: [
+      'Linux',
+      'Bash',
+      'Git',
+      'Python',
+      'YAML',
+    ],
   },
   {
-    title: 'Observability and Networking',
-    skills: ['Prometheus', 'Grafana', 'Cloudflare', 'DNS', 'TLS', 'ALB'],
+    title: 'Observability, Networking and Security',
+    skills: [
+      'Prometheus',
+      'Grafana',
+      'CloudWatch',
+      'Cloudflare',
+      'DNS',
+      'TLS',
+      'ALB',
+      'Trivy',
+      'Checkov',
+    ],
   },
 ]
 
