@@ -1,3 +1,4 @@
+
 .projects {
   padding: 100px 24px;
   background: #08111f;
@@ -185,10 +186,46 @@
   opacity: 0.65;
 }
 
+/* Full-width EKS-V2 team project */
+.project-card-wide {
+  grid-column: 1 / -1;
+}
+
+.project-card-wide .project-description {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-card-wide .project-feature-columns {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 48px;
+  max-width: 850px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-card-wide .project-badges {
+  justify-content: center;
+}
+
+.project-card-wide .project-links {
+  justify-content: center;
+}
+
 /* Tablet */
 @media (max-width: 900px) {
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-card-wide {
+    grid-column: auto;
+  }
+
+  .project-card-wide .project-feature-columns {
+    column-gap: 18px;
   }
 }
 
@@ -206,7 +243,8 @@
     padding: 26px;
   }
 
-  .project-feature-columns {
+  .project-feature-columns,
+  .project-card-wide .project-feature-columns {
     grid-template-columns: 1fr;
     gap: 10px;
   }

@@ -1,3 +1,4 @@
+
 import './Projects.css'
 
 const PROJECTS = [
@@ -38,7 +39,7 @@ const PROJECTS = [
       },
       {
         label: 'Video Walkthrough',
-        href: '#',
+        href: 'https://www.loom.com/share/b2aaea77cad84780862cd7dcd0e965ef',
       },
     ],
   },
@@ -83,6 +84,62 @@ const PROJECTS = [
       },
     ],
   },
+  {
+    title: 'EKS-V2 Team Platform',
+    description:
+      'A collaborative CoderCo team project developing a production-style e-commerce order fulfilment platform with nine Go microservices, AWS infrastructure automation, Kubernetes and GitOps.',
+    featured: true,
+    features: [
+      'Collaborative infrastructure development',
+      'Terraform IaC across three availability zones',
+      'Development, staging and production environments',
+      'GitHub Actions CI/CD with AWS OIDC',
+      'Helm charts and Kubernetes deployments',
+      'ArgoCD Bootstrap and GitOps workflows',
+      'AWS Secrets Manager and KMS encryption',
+      'Amazon SQS event-driven microservices',
+      'Karpenter autoscaling and observability',
+      'Security scanning with Trivy and Checkov',
+    ],
+    highlights: [
+      'Amazon EKS',
+      'Kubernetes',
+      'Terraform',
+      'Docker',
+      'GitHub Actions',
+      'ArgoCD',
+      'Helm',
+      'AWS OIDC',
+      'IAM / IRSA',
+      'Secrets Manager',
+      'AWS KMS',
+      'Amazon SQS',
+      'Amazon RDS',
+      'PostgreSQL',
+      'Redis',
+      'Karpenter',
+      'Traefik',
+      'ExternalDNS',
+      'Prometheus',
+      'Grafana',
+      'Trivy',
+      'Checkov',
+    ],
+    links: [
+      {
+        label: 'GitHub',
+        href: 'https://github.com/EKS-V2-Alpha-Team/Alpha-Pilot-4week',
+      },
+      {
+        label: 'Architecture Diagram',
+        href: '/images/eksv2-architecture.png',
+      },
+      {
+        label: 'Video Walkthrough',
+        href: 'https://www.loom.com/share/441701c46fc946fba7742bbb0fdb5ef2',
+      },
+    ],
+  },
 ]
 
 function FeatureItem({ feature }) {
@@ -116,30 +173,43 @@ function Projects() {
 
         <div className="projects-grid">
           {PROJECTS.map((project) => {
-            const midpoint = Math.ceil(project.features.length / 2)
             const leftFeatures = project.features.filter(
               (_, index) => index % 2 === 0
             )
+
             const rightFeatures = project.features.filter(
               (_, index) => index % 2 !== 0
             )
 
             return (
-              <article key={project.title} className="project-card">
+              <article
+                key={project.title}
+                className={`project-card ${
+                  project.featured ? 'project-card-wide' : ''
+                }`}
+              >
                 <h3>{project.title}</h3>
 
-                <p className="project-description">{project.description}</p>
+                <p className="project-description">
+                  {project.description}
+                </p>
 
                 <div className="project-feature-columns">
                   <ul className="project-features">
                     {leftFeatures.map((feature) => (
-                      <FeatureItem key={feature} feature={feature} />
+                      <FeatureItem
+                        key={feature}
+                        feature={feature}
+                      />
                     ))}
                   </ul>
 
                   <ul className="project-features">
                     {rightFeatures.map((feature) => (
-                      <FeatureItem key={feature} feature={feature} />
+                      <FeatureItem
+                        key={feature}
+                        feature={feature}
+                      />
                     ))}
                   </ul>
                 </div>
@@ -158,9 +228,13 @@ function Projects() {
                       <a
                         key={link.label}
                         href={link.href}
-                        target={isPlaceholder ? undefined : '_blank'}
+                        target={
+                          isPlaceholder ? undefined : '_blank'
+                        }
                         rel={
-                          isPlaceholder ? undefined : 'noopener noreferrer'
+                          isPlaceholder
+                            ? undefined
+                            : 'noopener noreferrer'
                         }
                         aria-disabled={isPlaceholder}
                         onClick={
@@ -184,3 +258,5 @@ function Projects() {
 }
 
 export default Projects
+
+

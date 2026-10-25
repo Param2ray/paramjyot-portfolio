@@ -1,7 +1,8 @@
+
 import './Hero.css'
 
 const STATS = [
-  { value: '2+', label: 'Production Platforms' },
+  { value: '3+', label: 'Production Platforms' },
   { value: '30+', label: 'Cloud Technologies' },
   { value: 'CI/CD', label: 'Automation' },
   { value: 'IaC', label: 'Terraform' },
@@ -56,11 +57,10 @@ function Hero() {
 
           <a
             className="secondary-button"
-            href="/Paramjyot_Tooray_DevOps_Engineer_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/Paramjyot_Tooray_DevOps_Engineer_CV.pdf"
+            download="Paramjyot_Tooray_DevOps_Engineer_CV.pdf"
           >
-            Download Resume
+            Download CV
           </a>
         </div>
 
@@ -78,3 +78,4 @@ function Hero() {
 }
 
 export default Hero
+
