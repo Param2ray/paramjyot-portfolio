@@ -5,7 +5,7 @@ const PROJECTS = [
   {
     title: 'EKS Production Platform',
     description:
-      'Production-style Kubernetes platform running on Amazon EKS.',
+      'Kubernetes platform built on Amazon EKS using production-grade engineering practices.',
     features: [
       'Infrastructure as Code with Terraform',
       'Automated GitHub Actions CI/CD',
@@ -46,7 +46,7 @@ const PROJECTS = [
   {
     title: 'ECS Production Healthcheck Service',
     description:
-      'Production-ready monitoring platform deployed on Amazon ECS Fargate.',
+      'Monitoring platform deployed on Amazon ECS Fargate, incorporating production-grade security, automation and reliability practices.',
     features: [
       'ECS Fargate',
       'Application Load Balancer',
@@ -87,7 +87,7 @@ const PROJECTS = [
   {
     title: 'EKS-V2 Team Platform',
     description:
-      'A collaborative CoderCo team project developing a production-style e-commerce order fulfilment platform with nine Go microservices, AWS infrastructure automation, Kubernetes and GitOps.',
+      'A collaborative CoderCo team project developing an e-commerce order fulfilment platform with nine Go microservices, applying production-grade practices across AWS infrastructure automation, Kubernetes and GitOps.',
     featured: true,
     features: [
       'Collaborative infrastructure development',

@@ -19,7 +19,7 @@ function Hero() {
         </p>
 
         <span className="badge">
-          Building production-style AWS cloud platforms
+          Building AWS cloud platforms with production-grade practices
         </span>
 
         <h1>Paramjyot Tooray</h1>
@@ -27,9 +27,9 @@ function Hero() {
         <h2>DevOps Engineer</h2>
 
         <p className="intro">
-          I build production-style cloud infrastructure using AWS, Terraform,
-          Docker, Kubernetes and GitHub Actions, with a focus on automation,
-          security and reliability.
+          I build cloud infrastructure using AWS, Terraform,
+          Docker, Kubernetes and GitHub Actions, applying production-grade
+          practices across automation, security and reliability.
         </p>
 
         <div className="buttons">

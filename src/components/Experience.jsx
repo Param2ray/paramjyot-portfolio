@@ -5,7 +5,7 @@ const EXPERIENCE = [
     title: 'DevOps Engineer',
     organisation: 'CoderCo',
     description:
-      'Building production-style cloud platforms using AWS, Terraform, Docker, Kubernetes and GitHub Actions. Designed Infrastructure as Code, automated CI/CD pipelines, containerised applications and implemented GitOps workflows while troubleshooting and improving cloud deployments.',
+      'Applied production-grade practices while building cloud platforms using AWS, Terraform, Docker, Kubernetes and GitHub Actions. Designed Infrastructure as Code, automated CI/CD pipelines, containerised applications and implemented GitOps workflows while troubleshooting and improving cloud deployments.',
     technologies: [
       'AWS',
       'Terraform',

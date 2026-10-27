@@ -7,8 +7,8 @@ function About() {
         <h2>About Me</h2>
 
         <p>
-          I am a DevOps Engineer focused on building production-style cloud
-          platforms through hands-on projects with CoderCo. My work centres
+          I am a DevOps Engineer focused on building cloud platforms using
+          production-grade practices through hands-on projects with CoderCo. My work centres
           on AWS, using Terraform to provision infrastructure as code and
           Docker and Kubernetes to containerise and orchestrate applications
           reliably and repeatably.

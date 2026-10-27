@@ -2,15 +2,15 @@ function Articles() {
   const articles = [
     {
       title:
-        'Building a Production-Style Kubernetes Platform on AWS with Amazon EKS',
+        'Building a Production-Grade Kubernetes Platform on AWS with Amazon EKS',
       description:
-        'A walkthrough of building a production-style Kubernetes platform on AWS using Amazon EKS, Terraform, GitHub Actions, ArgoCD, Traefik, cert-manager, ExternalDNS, Prometheus and Grafana.',
+        'A walkthrough of building a Kubernetes platform on AWS using production-grade engineering practices with Amazon EKS, Terraform, GitHub Actions, ArgoCD, Traefik, cert-manager, ExternalDNS, Prometheus and Grafana.',
       link:
         'https://medium.com/@param_2ray/building-a-production-style-kubernetes-platform-on-aws-with-amazon-eks-e27d533115ce',
     },
     {
       title:
-        'Building a Production-Style Health Monitoring Platform on AWS with ECS Fargate',
+        'Building a Production-Grade Health Monitoring Platform on AWS with ECS Fargate',
       description:
         'How I built a secure and automated health-monitoring platform using Amazon ECS Fargate, Terraform, GitHub Actions, an Application Load Balancer, CloudWatch and secure AWS networking.',
       link:
