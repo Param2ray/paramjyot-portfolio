@@ -1,4 +1,3 @@
-
 import './Hero.css'
 
 const STATS = [
@@ -60,16 +59,16 @@ function Hero() {
           <div className="button-row download-row">
             <a
               className="secondary-button download-choice"
-              href="/Paramjyot_Tooray_DevOps_Engineer_UK_CV.pdf"
-              download="Paramjyot_Tooray_DevOps_Engineer_UK_CV.pdf"
+              href="/Paramjyot_Tooray_DevOps_Engineer_CV.pdf"
+              download="Paramjyot_Tooray_DevOps_Engineer_CV.pdf"
             >
               Download UK CV
             </a>
 
             <a
               className="secondary-button download-choice"
-              href="/Paramjyot_Tooray_DevOps_Engineer_Canada_Resume.pdf"
-              download="Paramjyot_Tooray_DevOps_Engineer_Canada_Resume.pdf"
+              href="/Paramjyot_Tooray_DevOps_Engineer_Resume.pdf"
+              download="Paramjyot_Tooray_DevOps_Engineer_Resume.pdf"
             >
               Download Canadian Resume
             </a>
@@ -90,6 +89,7 @@ function Hero() {
 }
 
 export default Hero
+
 
 
 

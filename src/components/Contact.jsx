@@ -1,4 +1,3 @@
-
 import './Contact.css'
 
 function Contact() {
@@ -44,16 +43,16 @@ function Contact() {
           </a>
 
           <a
-            href="/Paramjyot_Tooray_DevOps_Engineer_UK_CV.pdf"
-            download="Paramjyot_Tooray_DevOps_Engineer_UK_CV.pdf"
+            href="/Paramjyot_Tooray_DevOps_Engineer_CV.pdf"
+            download="Paramjyot_Tooray_DevOps_Engineer_CV.pdf"
             className="contact-button"
           >
             Download UK CV
           </a>
 
           <a
-            href="/Paramjyot_Tooray_DevOps_Engineer_Canada_Resume.pdf"
-            download="Paramjyot_Tooray_DevOps_Engineer_Canada_Resume.pdf"
+            href="/Paramjyot_Tooray_DevOps_Engineer_Resume.pdf"
+            download="Paramjyot_Tooray_DevOps_Engineer_Resume.pdf"
             className="contact-button"
           >
             Download Canadian Resume
