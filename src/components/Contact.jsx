@@ -1,3 +1,4 @@
+
 import './Contact.css'
 
 function Contact() {
@@ -43,12 +44,19 @@ function Contact() {
           </a>
 
           <a
-            href="/Paramjyot_Tooray_DevOps_Engineer_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/Paramjyot_Tooray_DevOps_Engineer_UK_CV.pdf"
+            download="Paramjyot_Tooray_DevOps_Engineer_UK_CV.pdf"
             className="contact-button"
           >
-            Download Resume
+            Download UK CV
+          </a>
+
+          <a
+            href="/Paramjyot_Tooray_DevOps_Engineer_Canada_Resume.pdf"
+            download="Paramjyot_Tooray_DevOps_Engineer_Canada_Resume.pdf"
+            className="contact-button"
+          >
+            Download Canadian Resume
           </a>
         </div>
       </div>

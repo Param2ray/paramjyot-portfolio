@@ -2,7 +2,7 @@
 import './Hero.css'
 
 const STATS = [
-  { value: '3+', label: 'Production Platforms' },
+  { value: '3', label: 'Cloud Projects' },
   { value: '30+', label: 'Cloud Technologies' },
   { value: 'CI/CD', label: 'Automation' },
   { value: 'IaC', label: 'Terraform' },
@@ -33,35 +33,47 @@ function Hero() {
         </p>
 
         <div className="buttons">
-          <a className="primary-button" href="#projects">
-            View Projects
-          </a>
+          <div className="button-row">
+            <a className="primary-button" href="#projects">
+              View Projects
+            </a>
 
-          <a
-            className="secondary-button"
-            href="https://github.com/Param2ray"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
+            <a
+              className="secondary-button"
+              href="https://github.com/Param2ray"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
 
-          <a
-            className="secondary-button"
-            href="https://www.linkedin.com/in/paramjyot-tooray-43a5442b/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            LinkedIn
-          </a>
+            <a
+              className="secondary-button"
+              href="https://www.linkedin.com/in/paramjyot-tooray-43a5442b/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </div>
 
-          <a
-            className="secondary-button"
-            href="/Paramjyot_Tooray_DevOps_Engineer_CV.pdf"
-            download="Paramjyot_Tooray_DevOps_Engineer_CV.pdf"
-          >
-            Download CV
-          </a>
+          <div className="button-row download-row">
+            <a
+              className="secondary-button download-choice"
+              href="/Paramjyot_Tooray_DevOps_Engineer_UK_CV.pdf"
+              download="Paramjyot_Tooray_DevOps_Engineer_UK_CV.pdf"
+            >
+              Download UK CV
+            </a>
+
+            <a
+              className="secondary-button download-choice"
+              href="/Paramjyot_Tooray_DevOps_Engineer_Canada_Resume.pdf"
+              download="Paramjyot_Tooray_DevOps_Engineer_Canada_Resume.pdf"
+            >
+              Download Canadian Resume
+            </a>
+          </div>
         </div>
 
         <div className="stats">
@@ -78,4 +90,6 @@ function Hero() {
 }
 
 export default Hero
+
+
 

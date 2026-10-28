@@ -1,3 +1,4 @@
+
 .hero {
   position: relative;
   min-height: calc(100vh - 68px);
@@ -6,7 +7,12 @@
   justify-content: center;
   padding: 56px 24px;
   overflow: hidden;
-  background: linear-gradient(135deg, #08111f 0%, #0f172a 55%, #111827 100%);
+  background: linear-gradient(
+    135deg,
+    #08111f 0%,
+    #0f172a 55%,
+    #111827 100%
+  );
 }
 
 .hero-bg {
@@ -32,17 +38,13 @@
   0% {
     background-position: 0% 0%;
   }
+
   50% {
     background-position: 100% 60%;
   }
+
   100% {
     background-position: 0% 0%;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-bg {
-    animation: none;
   }
 }
 
@@ -50,6 +52,7 @@
   position: relative;
   z-index: 1;
   max-width: 920px;
+  width: 100%;
   text-align: center;
   animation: hero-fade-in 0.9s ease both;
 }
@@ -59,6 +62,7 @@
     opacity: 0;
     transform: translateY(14px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -66,6 +70,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .hero-bg,
   .hero-content {
     animation: none;
   }
@@ -116,20 +121,37 @@
   line-height: 1.85;
 }
 
+/* Main button container */
+
 .hero .buttons {
   display: flex;
-  justify-content: center;
-  gap: 18px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
   margin-bottom: 56px;
 }
 
+/* Individual button rows */
+
+.hero .button-row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 18px;
+  width: 100%;
+}
+
 .hero .buttons a {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
   padding: 16px 32px;
   border-radius: 10px;
   font-weight: 700;
   font-size: 1rem;
+  text-align: center;
   text-decoration: none;
   transition:
     transform 0.25s ease,
@@ -142,6 +164,13 @@
   transform: translateY(-3px);
 }
 
+.hero .buttons a:focus-visible {
+  outline: 2px solid #7dd3fc;
+  outline-offset: 4px;
+}
+
+/* Primary button */
+
 .hero .primary-button {
   background: #38bdf8;
   color: #08111f;
@@ -150,6 +179,8 @@
 .hero .primary-button:hover {
   box-shadow: 0 14px 34px rgba(56, 189, 248, 0.3);
 }
+
+/* Secondary buttons */
 
 .hero .secondary-button {
   border: 1px solid #38bdf8;
@@ -160,6 +191,36 @@
   background: rgba(56, 189, 248, 0.1);
   box-shadow: 0 14px 34px rgba(56, 189, 248, 0.18);
 }
+
+/* UK CV and Canadian Resume buttons */
+
+.hero .download-row {
+  margin-top: 4px;
+}
+
+.hero .buttons a.download-choice {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 240px;
+  gap: 5px;
+  padding: 14px 26px;
+}
+
+.hero .download-choice span {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.hero .download-choice small {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #cbd5e1;
+  letter-spacing: 0.2px;
+}
+
+/* Statistics */
 
 .stats {
   display: grid;
@@ -200,13 +261,36 @@
   text-align: center;
 }
 
+/* Mobile responsiveness */
+
 @media (max-width: 640px) {
   .stats {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .hero .button-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .hero .buttons a {
     width: 100%;
-    text-align: center;
+  }
+
+  .hero .buttons a.download-choice {
+    min-width: 0;
+  }
+
+  .hero .intro {
+    font-size: 1rem;
+    line-height: 1.7;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .buttons a,
+  .stat-card {
+    transition: none;
+  }
+}
+
