@@ -18,7 +18,7 @@ function Hero() {
         </p>
 
         <span className="badge">
-          Building AWS cloud platforms with production-grade practices
+          Building production-grade AWS cloud projects
         </span>
 
         <h1>Paramjyot Tooray</h1>
